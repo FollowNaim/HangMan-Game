@@ -97,9 +97,12 @@ tryAgain.addEventListener("click", () => {
 //Generating Word Dynamatically
 
 const getRandomWord = () => {
+ console.log("Game is developed By @Naim");
+ console.log("Follow Here : https://github.com/FollowNaim");
+ console.log("I'M Here https://naim.vercel.app");
   const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
   document.querySelector(".hint-txt b").innerText = hint;
-  console.log(word);
+  console.log("The answer is "+word);
   wordDisplay.innerHTML = word
     .split("")
     .map(() => `<li class="letter"></li>`)
