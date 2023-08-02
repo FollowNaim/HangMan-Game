@@ -42,8 +42,8 @@ body{
 @media only screen and (min-width:672px){
  .container{
   left: 50%;
-  top: 50%;
-  margin: 50% auto;
+  top: 15%;
+  margin: 15% auto;
  }
 }
 .container.show{
