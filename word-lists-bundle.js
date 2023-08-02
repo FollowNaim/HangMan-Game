@@ -1,3 +1,10 @@
+// This Code is Coded And Designed By @Naim
+// Original Author And Developer is @Naim
+// Give Proper Credit If u use it.
+// All Rights Reserved By @Naim
+// https://github.com/FollowNaim
+
+
 const wordList = [
     {
         word: "guitar",

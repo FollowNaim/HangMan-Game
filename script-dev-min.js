@@ -1,6 +1,6 @@
 
-// The Code is Coded And Designed By @Naim
-// Origin Author And Developer is @Naim
+// This Code is Coded And Designed By @Naim
+// Original Author And Developer is @Naim
 // Give Proper Credit If u use it.
 // All Rights Reserved By @Naim
 // https://github.com/FollowNaim
@@ -111,8 +111,8 @@ getRandomWord();
 
 // JS END
 
-// The Code is Coded And Designed By @Naim
-// Origin Author And Developer is @Naim
+// This Code is Coded And Designed By @Naim
+// Original Author And Developer is @Naim
 // Give Proper Credit If u use it.
 // All Rights Reserved By @Naim
 // https://github.com/FollowNaim
