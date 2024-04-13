@@ -9,6 +9,7 @@
 
 // JS START
 
+
 const keyboardDiv = document.querySelector(".keyboard");
 const wordDisplay = document.querySelector(".word");
 const guessesText = document.querySelector(".guesses-txt");
@@ -25,12 +26,12 @@ let correctLetters = [];
 const clickedLetters = [];
 
 const images = [
-  "/images/hangman-1.svg",
-  "/images/hangman-2.svg",
-  "/images/hangman-3.svg",
-  "/images/hangman-4.svg",
-  "/images/hangman-5.svg",
-  "/images/hangman-6.svg"
+  "./images/hangman-1.svg",
+  "./images/hangman-2.svg",
+  "./images/hangman-3.svg",
+  "./images/hangman-4.svg",
+  "./images/hangman-5.svg",
+  "./images/hangman-6.svg"
 ];
 
 // Adding All buttons 
@@ -44,6 +45,13 @@ for (let i = 97; i < 123; i++) {
     console.log("btn clicked");
     initGame(e.currentTarget, String.fromCharCode(i));
   });
+}
+
+const showCredit = ()=>{
+  console.log(
+    "%cMade with ❤︎️ by Naim",
+    "background:#14161a;color:#fff;padding:0.5em 1em;line-height:1.8;"
+);
 }
 
 // Iniatlizing The Game
@@ -64,7 +72,6 @@ const initGame = (button,clickedLetter)=>{
  }
   button.disabled = true;
   guessesText.innerText = `${wrongGuess} / ${maxGuess}`;
-  
   if(wrongGuess == maxGuess) return gameOver (false);
   if(correctLetters.length === currentWord.length) return gameOver (true);
 }
@@ -73,21 +80,18 @@ const initGame = (button,clickedLetter)=>{
 
 const gameOver = (isVictory) => {
  if (isVictory) {
-  gameModel.style.display = "block";
+  gameModel.style.display = "flex";
   const gameResults = document.querySelector(".game-results");
-  gameResults.querySelector("img").src = "/images/victory.gif";
+  gameResults.querySelector("img").src = "./images/victory.gif";
   gameResults.querySelector("h3").innerHTML = `You Found The Word <span class>${currentWord}</span>`
   gameResults.querySelector("button").textContent = "Play Again";
   gameModel.classList.add("show")
-  
  } else {
   gameModel.classList.add("show")
-  gameModel.style.display = "block";
+  gameModel.style.display = "flex";
   correctWord.innerText = currentWord;
  }
-
 }
-
 
 tryAgain.addEventListener("click", () => {
   location.reload();
@@ -100,6 +104,7 @@ const getRandomWord = () => {
  console.log("Game is developed By @Naim");
  console.log("Follow Here : https://github.com/FollowNaim");
  console.log("I'M Here https://naim.vercel.app");
+ showCredit();
   const { word, hint } = wordList[Math.floor(Math.random() * wordList.length)];
   document.querySelector(".hint-txt b").innerText = hint;
   console.log("The answer is "+word);

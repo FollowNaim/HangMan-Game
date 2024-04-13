@@ -15,26 +15,22 @@
 <head>
  <meta charset="UTF-8">
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <link rel="stylesheet" href=" style-dev-min.css">
- 
-
+ <link rel="stylesheet" href="src/style.css">
+ <link rel="shortcut icon" href="images/link-icon.svg" type="image/x-icon">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
  <title>HangMan Game</title>
 </head>
 
 <body>
  <div class="container">
-  
   <div class="img-box">
-   <img src="/images/hangman-0.svg" alt="">
+   <img src="./images/hangman-0.svg" alt="">
    <h1>Hangman Game</h1>
   </div>
-  
+
   <div class="game-box">
    <ul class="word">
-
    </ul>
-   
-   
    <h4 class="hint-txt">
     Hint text : <br>
     <b></b>
@@ -43,33 +39,32 @@
     Wrong Guesses:
     <span class="guesses-txt">0 / 6</span>
    </h4>
-   
    <div class="keyboard">
-
-   </div>
-   
-   
-   
+   </div> 
   </div>
-  
-  
-  
-  
-  
  </div>
  
  <div class="game-model">
   <div class="game-results">
-   <img src="/images/lost.gif" alt="">
+   <img src="./images/lost.gif" alt="">
    <h3>The correct Word Was : <span class="correct-word"></span></h3>
    <button class="try-again">Try Again</button>
   </div>
  </div>
+ <footer>
+    <div class="left">
+        <h4>Proudly open source</h4>
+    </div>
+    <div class="right">
+        <a href="https://github.com/FollowNaim" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://t.me/AhsanHaslb" target="_blank"><i class="fa-brands fa-telegram"></i></i></a>
+    </div>
+ </footer>
 
 
 
-<script src="word-lists-bundle.js"></script>
-<script src="script-dev-min.js"></script>
+<script src="src/word-lists-bundle.js"></script>
+<script src="src/script.js"></script>
 </body>
 
 </html>

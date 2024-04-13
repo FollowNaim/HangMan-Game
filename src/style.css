@@ -1,0 +1,222 @@
+/*
+
+
+//  This Code is Coded And Designed By @Naim
+//  Original Author And Developer is @Naim
+//  Give Proper Credit If u use it.
+//  All Rights Reserved By @Naim
+//  https://github.com/FollowNaim
+
+ 
+ */
+
+/* CSS START */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,56,9,1) 83%);
+  padding: 1rem 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Container Styling */
+
+.container {
+  z-index: 19292;
+  opacity: 1;
+  background: #fff;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 4px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.container.show {
+  opacity: 0;
+}
+
+.img-box {
+  margin: 1rem 0;
+}
+.img-box img {
+  width: 12rem;
+}
+
+.img-box h1 {
+  font-size: 1.5rem;
+}
+
+/* Game Box and Word Box styling Fo li and everything */
+
+.word {
+  margin: 1.5rem 0;
+  list-style: none;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.letter {
+  margin-top: 20px;
+  font-weight: 700;
+  text-align: center;
+  width: 25px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  border-bottom: 3px solid black;
+  font-size: 1.5rem;
+}
+.letter.gussed {
+  border-color: transparent;
+  margin: -15px 0 20px;
+}
+.hint-txt {
+  margin: 1rem 0;
+  color: #545665;
+}
+.hint-txt b {
+  color: #000;
+}
+.guesses {
+  margin: 1rem 0;
+  font-weight: 500;
+}
+.guesses span {
+  color: red;
+  text-transform: capitalize;
+}
+
+/* Keyboard Styling */
+
+.keyboard {
+  margin-top: 0.5rem;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 350px;
+  margin: 0.5rem auto;
+}
+.keyboard button {
+  width: calc(100% / 7 - 5px);
+  background: #5e63ba;
+  font-size: 1rem;
+  border: 0;
+  color: #fff;
+  border-radius: 4px;
+  padding: 0.2rem 0;
+}
+.keyboard button:hover {
+  background: #9295b7;
+}
+
+.keyboard button[disabled] {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+/* Game Victory And all Stuffs Styling */
+
+.game-model {
+  pointer-events: none;
+  z-index: 999;
+  opacity: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  opacity: 0;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.4s ease;
+}
+
+.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.game-results {
+  border-radius: 7px;
+  width: 100%;
+  max-width: 300px;
+  height: 300px;
+  background: #fff;
+  margin: 50% auto;
+  text-align: center;
+}
+.game-results img {
+  width: 100px;
+  margin: 1rem 1rem;
+}
+.game-results h3 {
+  margin: 1rem 0 0 0;
+  font-size: 1rem;
+}
+.game-results span {
+  color: blue;
+}
+.game-results .try-again {
+  margin: 2rem 0 0 0;
+  border: none;
+  width: 8rem;
+  height: 2.5rem;
+  background: #29339f;
+  color: #fff;
+  border-radius: 5px;
+}
+
+
+/* footer styling */
+
+footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  max-width: 700px;
+margin: 10px auto;
+gap: 30px;
+}
+footer .left{
+  color: #fff;
+  font-size: 16px;
+}
+footer .right{
+  display: flex;
+  gap: 10px;
+
+}
+footer .right a{
+  text-decoration: none;
+  color: #fff;
+}
+footer .right a:hover{
+  color: #ac0a0a;
+}
+footer .right a i{
+  font-size: 26px;
+}
+/* CSS END */
+
+/*
+
+
+//  This Code is Coded And Designed By @Naim
+//  Original Author And Developer is @Naim
+//  Give Proper Credit If u use it.
+//  All Rights Reserved By @Naim
+//  https://github.com/FollowNaim
+
+ 
+ */
