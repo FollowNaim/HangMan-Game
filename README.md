@@ -19,4 +19,6 @@ a simple but tricky game.
 
 - please give me proper credit and keep the footer and code credit as it is if you copy my code.
 
+## proudly open source
+
 # [Designed and Developed by @Naim](https://github.com/FollowNaim)
